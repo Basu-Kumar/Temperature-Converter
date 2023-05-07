@@ -6,15 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>temperature converter</title>
 </head>
+    <style>
+        body{
+            background-color: cyan;
+            
+        }
+        #container{
+            display: flex;
+            height: 140px;
+            width: 60%;
+            margin: 180px auto;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+            background-color: blueviolet;
+        }
+
+        .inp-div{
+            display: flex;
+            flex-direction: column;
+            margin: 8px;
+        }
+
+        #container label{
+            font-size: 20px;
+        }
+
+        .inp{
+            border: 2px solid saddlebrown;
+        }
+
+    </style>
 <body>
     <div id="container">
         <div class="inp-div">
             <label for="cel">Celsius</label>
-            <input type="number" id="cel" default="0">
+            <input type="number" id="cel" value="0" class="inp">
         </div>
         <div class="inp-div">
             <label for="fah">Fahrenheit</label>
-            <input type="number" id="fah" default="32">
+            <input type="number" id="fah" value="32" class="inp">
         </div>
     </div>
 </body>
